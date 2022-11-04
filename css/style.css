@@ -6,6 +6,7 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
+  color: #7d7f84;
 }
 
 .flex{
@@ -17,14 +18,25 @@ body{
   height: calc(100vh - 120px);
 }
 
-header{
+h1,
+h2,
+h3{
+  color: white;
+}
+
+h2{
+  font-size: 1rem;
+}
+
+
+header.main{
   width:230px;
   height: 100%;
   background-color: black;
 }
 
 main{
-  flex-grow: 1;
+  width: calc(100% - 230px);
   background-color: #141922;
 }
 
@@ -32,3 +44,60 @@ footer{
   height: 120px;
   background-color: #282828;
 }
+
+header.secondary{
+  height: 90px;
+  background-color: #080b12;
+}
+
+nav.sec-navbar{
+  text-align: center;
+  padding-top: 1rem;
+}
+
+nav.sec-navbar ul li{
+  display: inline;
+  list-style: none;
+}
+
+div.discs-firstrow{
+  padding: 3rem;
+  text-align: center;
+}
+
+div.discs-firstrow h1{
+  padding-bottom: 2rem;
+  text-align: start;
+}
+
+div.discs-firstrow h2{
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  line-height: 100%;
+}
+
+div.discs-firstrow p{
+  padding-top: 0.5remrem;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+figure{
+  position: relative;
+}
+
+figure img{
+  width: 180px;
+  padding-right: 1rem;
+}
+
+span.play-button{
+  font-size: 3.5rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left:30%;
+  transform: translateY(-50%);
+  display: none;
+}
+
