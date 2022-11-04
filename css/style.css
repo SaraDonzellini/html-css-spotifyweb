@@ -7,3 +7,28 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.flex{
+  display: flex;
+}
+
+.container{
+  width: 100%;
+  height: calc(100vh - 120px);
+}
+
+header{
+  width:230px;
+  height: 100%;
+  background-color: black;
+}
+
+main{
+  flex-grow: 1;
+  background-color: #141922;
+}
+
+footer{
+  height: 120px;
+  background-color: #282828;
+}
