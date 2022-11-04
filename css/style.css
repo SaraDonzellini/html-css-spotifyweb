@@ -185,6 +185,17 @@ header.main img.logo{
   margin: 1rem 0 0 1rem;
 }
 
+header.main img.logo-mini{
+  width: 60%;
+  margin: 1rem 0 0 0.5rem;
+  display: none
+}
+
+div.vanish{
+  display: none;
+}
+
+
 header.main ul li{
   list-style-type: none;
   margin-left: 2rem;
@@ -253,6 +264,34 @@ div.down ul li:last-child{
   }
   main{
     width: calc(100% - 50px);
+  }
+
+  header.main img.logo{
+    display: none;
+  }
+
+  header.main ul li{
+    display: none;
+  }
+
+  header.main h3{
+    display: none;
+  }
+
+  header.main img.logo-mini{
+    display: inline;
+    margin-bottom: 1rem;
+  }
+
+  div.vanish{
+    display: inline-block;
+    align-items: center;
+  }
+
+  div.vanish img{
+    width: 60%;
+    margin-left: 0.6rem;
+    margin-bottom: 0.7rem;
   }
 }
 
