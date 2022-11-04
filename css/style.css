@@ -21,6 +21,11 @@ body{
   justify-content: center;
 }
 
+.align-center{
+  align-items: center;
+}
+
+
 .flex-column{
   flex-direction: column;
 
@@ -244,6 +249,66 @@ div.down ul li:last-child{
 }
 
 
+footer{
+  position: relative;
+}
+
+
+footer img{
+  width: 10%;
+  display: block;
+  margin: 1rem;
+}
+
+footer p.sinister{
+  font-weight: bold;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+p.footerlittle{
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #7d7f84;
+}
+
+footer i.fa-heart{
+  color: #7d7f84;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
+footer i.fa-folder{
+  color: #7d7f84;
+  position: absolute;
+  top: 40%;
+  left: 17%;
+}
+
+div.volumedown{
+  height: 4px;
+  width: 10px;
+  background-color: #7d7f84;
+  vertical-align: middle;
+}
+
+div.volumeup{
+  height: 4px;
+  width: 90px;
+  background-color: #3d3e41;
+  vertical-align: middle;
+}
+
+div.footerright{
+  margin: 0 1rem;
+}
+
+div.footerright i{
+  margin: 0 0.5rem;
+}
+
 @media screen and (max-width:992px){
   div.disc{
     width: calc(100% / 4);
@@ -255,7 +320,22 @@ div.down ul li:last-child{
   div.disc{
     width: calc(100% / 2);
   }
+
+  footer i.fa-heart{
+    color: #7d7f84;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+  
+  footer i.fa-folder{
+    color: #7d7f84;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
 }
+
 
 
 @media screen and (max-width:576px){
