@@ -17,6 +17,10 @@ body{
   flex-wrap: wrap;
 }
 
+.flex-centered{
+  justify-content: center;
+}
+
 .container{
   width: 100%;
   height: calc(100vh - 120px);
@@ -59,6 +63,18 @@ footer{
 header.secondary{
   height: 90px;
   background-color: #080b12;
+  text-align: right;
+}
+
+button.upgrade{
+  border: 1px solid white;
+  color:white;
+  font-weight: bold;
+  background-color: #141922;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  margin-top: 1.3rem;
+  margin-right: 0.5rem;
 }
 
 nav.sec-navbar{
@@ -69,15 +85,23 @@ nav.sec-navbar{
 nav.sec-navbar ul li{
   display: inline;
   list-style: none;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+li:hover{
+  color: white;
+  cursor: pointer;
 }
 
 div.discs-firstrow{
-  padding: 3rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
 div.discs-firstrow h1{
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   text-align: start;
 }
 
@@ -88,7 +112,7 @@ div.discs-firstrow h2{
 }
 
 div.discs-firstrow p{
-  padding-top: 0.5remrem;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 0.9rem;
 }
@@ -118,5 +142,24 @@ figure img{
 
 figure:hover .play-button{
   display: inline;
+  cursor: pointer;
+}
 
+figure:hover{
+  filter: grayscale(60%);
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+figure.round img{
+  border-radius: 50%;
+}
+
+
+
+@media screen and (max-width:576){
+  header.main{
+    width: 50px;
+    background-color: aqua;
+  }
 }
