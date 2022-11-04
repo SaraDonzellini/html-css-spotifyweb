@@ -21,9 +21,13 @@ body{
   justify-content: center;
 }
 
+.flex-start{
+  justify-content: start;
+}
+
 .container{
   width: 100%;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
 }
 
 h1,
@@ -55,7 +59,7 @@ main{
 }
 
 footer{
-  height: 120px;
+  height: 100px;
   background-color: #282828;
   z-index: 3;
 }
@@ -74,7 +78,11 @@ button.upgrade{
   padding: 1rem 1.5rem;
   border-radius: 25px;
   margin-top: 1.3rem;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
+}
+
+button.upgrade:hover{
+  transform: scale(1.1);
 }
 
 nav.sec-navbar{
@@ -156,10 +164,15 @@ figure.round img{
 }
 
 
+@media screen and (max-width:768){
+
+}
+
+
 
 @media screen and (max-width:576){
   header.main{
-    width: 50px;
-    background-color: aqua;
+    width:50px;
   }
 }
+
