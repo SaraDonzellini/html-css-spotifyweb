@@ -21,8 +21,13 @@ body{
   justify-content: center;
 }
 
-.flex-start{
-  justify-content: start;
+.flex-column{
+  flex-direction: column;
+
+}
+
+.flex-between{
+  justify-content: space-between;
 }
 
 .container{
@@ -39,6 +44,16 @@ h3{
 h2{
   font-size: 1rem;
 }
+
+h3{
+  font-size: 1rem;
+}
+
+hr{
+  width:180px;
+  margin: 0.5rem 0;
+}
+
 
 p.little{
   text-align: start;
@@ -165,12 +180,63 @@ figure.round img{
 }
 
 
+header.main img.logo{
+  width: 60%;
+  margin: 1rem 0 0 1rem;
+}
+
+header.main ul li{
+  list-style-type: none;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+header.main ul li:first-child{
+  margin-top: 2rem;
+  
+}
+
+header.main ul li img{
+  width: 12%;
+}
+
+header.main h3{
+  margin: 2rem 0 0 2rem;
+}
+
+header.main ul.playlist i{
+  font-size: 3rem;
+  vertical-align: middle;
+}
+
+header.main ul.playlist li{
+  padding: 0.5rem 0;
+}
+
+div.down ul li:first-child{
+  font-size: 0.9rem;
+}
+
+div.down img.download{
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+div.down img.profile{
+  background-color: #808080;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+div.down ul li:last-child{
+  margin-bottom: 1rem;
+}
+
+
 @media screen and (max-width:992px){
   div.disc{
     width: calc(100% / 4);
   }
-  
-
 }
 
 
@@ -178,10 +244,7 @@ figure.round img{
   div.disc{
     width: calc(100% / 2);
   }
-  
-
 }
-
 
 
 @media screen and (max-width:576px){
