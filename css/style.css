@@ -75,7 +75,7 @@ header.main{
 main{
   width: calc(100% - 230px);
   background-color: #141922;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 footer{
@@ -251,11 +251,13 @@ div.down ul li:last-child{
 
 footer{
   position: relative;
+  overflow: hidden;
 }
 
 
 footer img{
   width: 10%;
+  height: 10%;
   display: block;
   margin: 1rem;
 }
@@ -273,30 +275,25 @@ p.footerlittle{
   color: #7d7f84;
 }
 
-footer i.fa-heart{
-  color: #7d7f84;
-  position: absolute;
-  top: 40%;
-  left: 15%;
+div.heart-folder{
+  margin: 1rem;
 }
 
-footer i.fa-folder{
-  color: #7d7f84;
-  position: absolute;
-  top: 40%;
-  left: 17%;
+
+div.volumebar{
+  width: 7vw;
 }
 
 div.volumedown{
   height: 4px;
-  width: 10px;
+  width: 10%;
   background-color: #7d7f84;
   vertical-align: middle;
 }
 
 div.volumeup{
   height: 4px;
-  width: 90px;
+  width: 90%;
   background-color: #3d3e41;
   vertical-align: middle;
 }
@@ -309,10 +306,52 @@ div.footerright i{
   margin: 0 0.5rem;
 }
 
+div.player-buttons i{
+  margin: 0rem 1rem 1rem 1rem;
+  color: white;
+  font-size: 0.9;
+}
+
+div.player-buttons i:nth-child(3){
+  font-size: 1.5rem;
+}
+
+div.play-bar-commands p{
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+div.play-bar{
+  width: 40vw;
+}
+
+
+div.played-bar{
+  height: 4px;
+  width: 25%;
+  background-color: #7d7f84;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+div.toplay-bar{
+  height: 4px;
+  width: 75%;
+  background-color: #3d3e41;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+
 @media screen and (max-width:992px){
   div.disc{
     width: calc(100% / 4);
   }
+
+  /* div.play-bar{
+    width: ;
+  } */
 }
 
 
@@ -321,18 +360,8 @@ div.footerright i{
     width: calc(100% / 2);
   }
 
-  footer i.fa-heart{
-    color: #7d7f84;
-    position: absolute;
-    top: 30%;
-    left: 30%;
-  }
-  
-  footer i.fa-folder{
-    color: #7d7f84;
-    position: absolute;
-    top: 50%;
-    left: 30%;
+  div.heart-folder{
+    flex-direction: column;
   }
 }
 
@@ -373,5 +402,18 @@ div.footerright i{
     margin-left: 0.6rem;
     margin-bottom: 0.7rem;
   }
+
+  /* footer i.fa-heart{
+    color: #7d7f84;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+  
+  footer i.fa-folder{
+    color: #7d7f84;
+    position: absolute;
+    top: 50%;
+    left: 20%; */
 }
 

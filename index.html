@@ -44,7 +44,7 @@
             <li><hr></li>
             <li><img src="img/profile.svg" alt="profile" class="profile">John Doe</li>
           </ul>
-          <div class="vanish">
+          <div class="vanish flex flex-column flex-centered align-center">
             <img src="img/download.svg" alt="download" class="download">
             <img src="img/profile.svg" alt="profile" class="profile">
           </div>
@@ -183,21 +183,41 @@
     </div>
     <footer class="footer flex flex-between align-center">
       <div class="flex">
-        <img src="img/sinister.jpeg" alt="sinister">
+        <img src="img/sinister.jpeg" alt="sinister" class="img-sinister">
         <div>
           <p class="sinister">Sinister</p>
           <p class="footerlittle">Brano Nome</p>
         </div>
-        <p><i class="fa-regular fa-heart"></i></p>
-        <p><i class="fa-regular fa-folder"></i></p>
+        <div class="flex flex-centered align-center heart-folder">
+          <p><i class="fa-regular fa-heart"></i></p>
+          <p><i class="fa-regular fa-folder"></i></p>
+        </div>
       </div>
-      <div>item</div>
+      <div class="flex flex-column align-center">
+        <div class="player-buttons flex flex-centered align-center">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-regular fa-circle-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-repeat"></i>
+        </div>
+        <div class="play-bar-commands flex flex-centered align-center">
+          <p class="time">0:25</p>
+            <div class="play-bar flex flex-centered align-center">
+              <div class="played-bar"></div>
+              <div class="toplay-bar"></div>
+            </div>
+          <p class="time">4:35</p>
+        </div>
+      </div>
       <div class="footerright flex flex-between flex-centered align-center">
         <i class="fa-solid fa-bars"></i>
         <i class="fa-solid fa-tv"></i>
         <i class="fa-solid fa-volume-high"></i>
-        <div class="volumedown"></div>
-        <div class="volumeup"></div>
+        <div class="volumebar flex flex-between flex-centered align-center">
+          <div class="volumedown"></div>
+          <div class="volumeup"></div>
+        </div>
       </div>
     </footer>
   </body>
