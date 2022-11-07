@@ -200,7 +200,7 @@ header.main ul li {
   list-style-type: none;
   margin-left: 2rem;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 header.main ul li:first-child {
@@ -212,7 +212,7 @@ header.main ul li img {
 }
 
 header.main h3 {
-  margin: 2rem 0 0 2rem;
+  margin: 1rem 0 0 1rem;
 }
 
 header.main ul.playlist i {
@@ -315,7 +315,7 @@ div.play-bar-commands p {
 }
 
 div.play-bar {
-  width: 40vw;
+  width: 30vw;
 }
 
 div.played-bar {
