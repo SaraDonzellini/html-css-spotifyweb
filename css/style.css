@@ -204,7 +204,7 @@ header.main ul li {
 }
 
 header.main ul li:first-child {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 header.main ul li img {
