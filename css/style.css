@@ -17,6 +17,11 @@ body {
   flex-wrap: wrap;
 }
 
+.flex-start{
+  justify-content: flex-start;
+}
+
+
 .flex-centered {
   justify-content: center;
 }
@@ -244,14 +249,17 @@ div.down ul li:last-child {
 }
 
 footer {
-  position: relative;
   overflow: hidden;
 }
 
-footer img {
-  width: 10%;
-  height: 10%;
-  display: block;
+div.footerleft{
+  width: 250px;
+}
+
+footer img.img-sinister {
+  width: 20%;
+  height: 20%;
+  display: inline-block;
   margin: 1rem;
 }
 
@@ -263,7 +271,7 @@ footer p.sinister {
 }
 
 p.footerlittle {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: normal;
   color: #7d7f84;
 }
