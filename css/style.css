@@ -305,12 +305,12 @@ div.player-buttons i {
 }
 
 div.player-buttons i:nth-child(3) {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 div.play-bar-commands p {
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: bold;
 }
 
@@ -326,7 +326,7 @@ div.played-bar {
   margin-left: 20px;
 }
 
-div.toplay-bar {
+div.to-play-bar {
   height: 4px;
   width: 75%;
   background-color: #3d3e41;
