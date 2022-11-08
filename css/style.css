@@ -71,6 +71,7 @@ p.little {
   font-size: 0.9rem;
 }
 
+/* Main sizes */
 header.main {
   width: 230px;
   height: 100%;
@@ -112,6 +113,7 @@ button.upgrade:hover {
   transform: scale(1.1);
 }
 
+/* secondary navbar */
 nav.sec-navbar {
   text-align: center;
   padding: 1rem;
@@ -142,6 +144,8 @@ li:hover {
   color: white;
   cursor: pointer;
 }
+
+/* covers/discs section */
 
 div.discs-firstrow {
   padding: 1rem 3rem;
@@ -204,6 +208,7 @@ figure.round img {
   border-radius: 50%;
 }
 
+/* main header */
 header.main img.logo {
   width: 60%;
   margin: 1rem 0 0 1rem;
@@ -263,6 +268,7 @@ header.main ul.playlist li {
   padding-bottom: 0.9rem;
 }
 
+/* main header bottom part */
 div.down img.download {
   vertical-align: middle;
   height: 17px;
@@ -281,6 +287,7 @@ div.down ul li:last-child {
   margin-bottom: 1rem;
 }
 
+/* footer */
 div.footerleft {
   width: 250px;
 }
@@ -397,6 +404,8 @@ div.played-bar i.fa-circle {
   display: none;
 }
 
+/* * Responsiveness */
+
 @media screen and (max-width: 992px) {
   div.disc {
     width: calc(100% / 4);
@@ -449,7 +458,7 @@ div.played-bar i.fa-circle {
     margin-bottom: 0.7rem;
   }
 
-  div.vanish img.profile{
+  div.vanish img.profile {
     width: 50%;
     margin-left: 13px;
   }
