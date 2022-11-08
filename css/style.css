@@ -76,6 +76,7 @@ header.main {
   width: 230px;
   height: 100%;
   background-color: black;
+  overflow-y: hidden;
 }
 
 main {
@@ -419,6 +420,7 @@ div.played-bar i.fa-circle {
 
   div.heart-folder {
     flex-direction: column;
+    /* margin-left: 0rem; */
   }
 }
 
