@@ -449,6 +449,11 @@ div.played-bar i.fa-circle {
     margin-bottom: 0.7rem;
   }
 
+  div.vanish img.profile{
+    width: 50%;
+    margin-left: 13px;
+  }
+
   div.green-tag {
     display: none;
   }
