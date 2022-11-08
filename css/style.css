@@ -208,19 +208,27 @@ div.vanish {
 
 header.main ul li {
   list-style-type: none;
-  margin-left: 1rem;
+  margin-left: 1.3rem;
   font-weight: bold;
   font-size: 0.8rem;
   margin-top: 0.3rem;
   vertical-align: middle;
-}
-
-header.main ul li:first-child {
-  margin-top: 1rem;
-}
-
-header.main ul li {
   padding: 0 0 0.3rem 0;
+}
+
+header.main ul li.active {
+  margin-top: 1rem;
+  color: white;
+  position: relative;
+}
+
+div.green-tag{
+  height: 1.5rem;
+  width: 2px;
+  background-color: #adff2f;
+  position: absolute;
+  top: 2px;
+  right: 228px;
 }
 
 header.main ul li img {
@@ -364,19 +372,17 @@ div.played-bar:hover {
   background-color: #adff2f;
 }
 
-div.played-bar:hover  i.fa-circle{
+div.played-bar:hover i.fa-circle {
   display: inline;
 }
 
-div.played-bar i.fa-circle{
-  position:absolute;
+div.played-bar i.fa-circle {
+  position: absolute;
   bottom: -5px;
   left: 95%;
   color: white;
   display: none;
 }
-
-
 
 @media screen and (max-width: 992px) {
   div.disc {
