@@ -349,6 +349,7 @@ div.played-bar {
   background-color: #7d7f84;
   vertical-align: middle;
   margin-left: 20px;
+  position: relative;
 }
 
 div.to-play-bar {
@@ -358,6 +359,24 @@ div.to-play-bar {
   vertical-align: middle;
   margin-right: 20px;
 }
+
+div.played-bar:hover {
+  background-color: #adff2f;
+}
+
+div.played-bar:hover  i.fa-circle{
+  display: inline;
+}
+
+div.played-bar i.fa-circle{
+  position:absolute;
+  bottom: -5px;
+  left: 95%;
+  color: white;
+  display: none;
+}
+
+
 
 @media screen and (max-width: 992px) {
   div.disc {
