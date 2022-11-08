@@ -83,7 +83,9 @@ main {
 footer {
   height: 100px;
   background-color: #282828;
-  z-index: 3;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 header.secondary {
@@ -248,9 +250,7 @@ div.down ul li:last-child {
   margin-bottom: 1rem;
 }
 
-footer {
-  overflow: hidden;
-}
+
 
 div.footerleft{
   width: 250px;
@@ -300,6 +300,7 @@ div.volumeup {
 
 div.footerright {
   margin: 0 1rem;
+  color: white;
 }
 
 div.footerright i {
